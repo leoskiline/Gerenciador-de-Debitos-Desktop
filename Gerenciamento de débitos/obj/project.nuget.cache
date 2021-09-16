@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YmJpvu6JWXF2Dcs0M4Cdb1AZ6WqUuatW3zRMrsKUVBUL9pq1f9yVd8eUKsgq5B44wr+wvx3/EzsrLzlkjxVWEQ==",
+  "dgSpecHash": "d4DF8J8tWMvVi6oBRIgJuwkcIYOpXBz/CzZlKSnlDIB3rkqvXwqozbaQb3XAe0Wn1M2rdxX7M4xU5QUp5D2yow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedro\\Desktop\\Gerenciador-de-Debitos-Desktop\\Gerenciamento de débitos\\Gerenciamento de débitos.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\source\\repos\\leoskiline\\Gerenciador-de-Debitos-Desktop\\Gerenciamento de débitos\\Gerenciamento de débitos.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pedro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Leonardo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

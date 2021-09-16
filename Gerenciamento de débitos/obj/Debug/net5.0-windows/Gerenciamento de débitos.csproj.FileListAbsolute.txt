@@ -61,3 +61,25 @@ C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\
 C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\ref\Gerenciamento de débitos.dll
 C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.pdb
 C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.genruntimeconfig.cache
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.exe
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.deps.json
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.runtimeconfig.json
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.runtimeconfig.dev.json
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.dll
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\ref\Gerenciamento de débitos.dll
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.pdb
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Form1.resources
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Login.resources
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Properties.Resources.resources
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.GenerateResource.cache
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.AssemblyInfo.cs
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.CopyComplete
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.dll
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\ref\Gerenciamento de débitos.dll
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.pdb
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.genruntimeconfig.cache

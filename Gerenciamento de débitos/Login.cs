@@ -42,6 +42,7 @@ namespace Gerenciamento_de_débitos
 
         public ValidaAutenticado PostAsync<T>(string url)
         {
+            ValidaAutenticado valida = new ValidaAutenticado();
             try
             {
                 var data = new Dictionary<string, string>();
@@ -50,14 +51,14 @@ namespace Gerenciamento_de_débitos
                 _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage response = _httpClient.PostAsync(_url + url, new FormUrlEncodedContent(data)).Result;
                 var content = response.Content.ReadAsStringAsync().Result;
-                return System.Text.Json.JsonSerializer.Deserialize<ValidaAutenticado>(content, _jsonOptions);
+                valida = System.Text.Json.JsonSerializer.Deserialize<ValidaAutenticado>(content, _jsonOptions);
                 
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
-            return default;
+            return valida;
         }
 
 
@@ -68,9 +69,12 @@ namespace Gerenciamento_de_débitos
                 var ret = PostAsync<ValidaAutenticado>("Login/Logar");
                 if (ret.Icon == "success")
                 {
-                    MessageBox.Show("Deu certo !!");
+                    MessageBox.Show(ret.Message);
                 }
-                MessageBox.Show("Não funcionou !!");
+                else
+                {
+                    MessageBox.Show(ret.Message);
+                }
             }
             else
             {
