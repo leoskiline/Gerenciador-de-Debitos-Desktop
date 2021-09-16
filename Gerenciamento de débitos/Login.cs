@@ -40,9 +40,9 @@ namespace Gerenciamento_de_débitos
             };
         }
 
-        public ValidaAutenticado PostAsync<T>(string url)
+        public Validacao PostAsync<T>(string url)
         {
-            ValidaAutenticado valida = new ValidaAutenticado();
+            Validacao valida = new Validacao();
             try
             {
                 var data = new Dictionary<string, string>();
@@ -51,7 +51,7 @@ namespace Gerenciamento_de_débitos
                 _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage response = _httpClient.PostAsync(_url + url, new FormUrlEncodedContent(data)).Result;
                 var content = response.Content.ReadAsStringAsync().Result;
-                valida = System.Text.Json.JsonSerializer.Deserialize<ValidaAutenticado>(content, _jsonOptions);
+                valida = System.Text.Json.JsonSerializer.Deserialize<Validacao>(content, _jsonOptions);
                 
             }
             catch (Exception e)
@@ -66,7 +66,27 @@ namespace Gerenciamento_de_débitos
         {
             if(ttbEmailLogin.TextLength > 0 && ttbEmailLogin.Text.Contains("@") && ttbEmailLogin.Text.Contains(".") && ttbSenhaLogin.TextLength > 0)
             {
-                var ret = PostAsync<ValidaAutenticado>("Login/Logar");
+                var ret = PostAsync<Validacao>("Login/Logar");
+                if (ret.Icon == "success")
+                {
+                    MessageBox.Show(ret.Message);
+                }
+                else
+                {
+                    MessageBox.Show(ret.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Campos Invalidos!");
+            }
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            if (ttbEmailRegistrar.TextLength > 0 && ttbEmailRegistrar.Text.Contains("@") && ttbEmailRegistrar.Text.Contains(".") && ttbSenhaRegistrar.TextLength > 0 && ttbNomeRegistrar.TextLength > 0)
+            {
+                var ret = PostAsync<Validacao>("Login/Registrar");
                 if (ret.Icon == "success")
                 {
                     MessageBox.Show(ret.Message);
