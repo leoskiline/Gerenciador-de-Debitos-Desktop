@@ -39,3 +39,25 @@ C:\Users\Leonardo\OneDrive\Documents\GitHub\Gerenciador-de-Debitos-Desktop\Geren
 C:\Users\Leonardo\OneDrive\Documents\GitHub\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.UsuarioModel.resources
 C:\Users\Leonardo\OneDrive\Documents\GitHub\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\Leonardo\OneDrive\Documents\GitHub\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.CopyComplete
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.exe
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.deps.json
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.runtimeconfig.json
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.runtimeconfig.dev.json
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.dll
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\ref\Gerenciamento de débitos.dll
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.pdb
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Form1.resources
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Login.resources
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Properties.Resources.resources
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.AssemblyInfoInputs.cache
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.AssemblyInfo.cs
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.CopyComplete
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.dll
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\ref\Gerenciamento de débitos.dll
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.pdb
+C:\Users\pedro\Desktop\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.genruntimeconfig.cache

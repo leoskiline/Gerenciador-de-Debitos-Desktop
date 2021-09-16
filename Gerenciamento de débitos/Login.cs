@@ -16,30 +16,6 @@ using System.Windows.Forms;
 
 namespace Gerenciamento_de_débitos
 {
-
-    public class UsuarioModel
-    {
-        private string email;
-        private string nome;
-        private string senha;
-        private string nivel;
-
-
-        public UsuarioModel()
-        {
-            this.email = "";
-            this.nome = "";
-            this.senha = "";
-            this.nivel = "COMUM";
-        }
-
-        public string Email { get => email; set => email = value; }
-        public string Nome { get => nome; set => nome = value; }
-        public string Senha { get => senha; set => senha = value; }
-        public string Nivel { get => nivel; set => nivel = value; }
-    }
-
-
     public partial class Login : Form
     {
         private JsonSerializerOptions _jsonOptions;
@@ -64,7 +40,7 @@ namespace Gerenciamento_de_débitos
             };
         }
 
-        public async Task<object> PostAsync<T>(string url)
+        public ValidaAutenticado PostAsync<T>(string url)
         {
             try
             {
@@ -72,13 +48,14 @@ namespace Gerenciamento_de_débitos
                 data.Add("email", ttbEmailLogin.Text);
                 data.Add("senha", ttbSenhaLogin.Text);
                 _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = _httpClient.PostAsync(_url + "Login/Logar", new FormUrlEncodedContent(data)).Result;
+                HttpResponseMessage response = _httpClient.PostAsync(_url + url, new FormUrlEncodedContent(data)).Result;
                 var content = response.Content.ReadAsStringAsync().Result;
-                ValidaAutenticado json = System.Text.Json.JsonSerializer.Deserialize<ValidaAutenticado>(content, _jsonOptions);;
+                return System.Text.Json.JsonSerializer.Deserialize<ValidaAutenticado>(content, _jsonOptions);
+                
             }
             catch (Exception e)
             {
-                Console.WriteLine(2);
+                Console.WriteLine(e);
             }
             return default;
         }
@@ -88,7 +65,12 @@ namespace Gerenciamento_de_débitos
         {
             if(ttbEmailLogin.TextLength > 0 && ttbEmailLogin.Text.Contains("@") && ttbEmailLogin.Text.Contains(".") && ttbSenhaLogin.TextLength > 0)
             {
-                Task<object> ret = PostAsync<ValidaAutenticado>("Login/Logar");
+                var ret = PostAsync<ValidaAutenticado>("Login/Logar");
+                if (ret.Icon == "success")
+                {
+                    MessageBox.Show("Deu certo !!");
+                }
+                MessageBox.Show("Não funcionou !!");
             }
             else
             {
