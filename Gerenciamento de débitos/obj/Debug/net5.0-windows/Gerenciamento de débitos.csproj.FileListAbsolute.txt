@@ -70,7 +70,6 @@ C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenci
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Gerenciamento de débitos.pdb
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.AssemblyReference.cache
-C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Form1.resources
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Login.resources
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.Properties.Resources.resources
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.csproj.GenerateResource.cache
@@ -83,3 +82,12 @@ C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenci
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\ref\Gerenciamento de débitos.dll
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.pdb
 C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.genruntimeconfig.cache
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.TelaPrincipal.resources
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.GerenciarDebitos.resources
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.Http.dll
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Leonardo\source\repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
