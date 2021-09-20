@@ -1,5 +1,6 @@
 ﻿using Gerenciamento_de_débitos.Api;
 using Gerenciamento_de_débitos.Model;
+using Gerenciamento_de_débitos.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace Gerenciamento_de_débitos
 {
     public partial class GerenciarDebitos : Form
     {
+        private WebApi api = new WebApi();
         public GerenciarDebitos()
         {
             InitializeComponent();
@@ -22,36 +24,45 @@ namespace Gerenciamento_de_débitos
             PnlDescricao.Enabled = false;
             PnlValor.Enabled = false;
 
+            //dgvDebitos.DataSource = api.ObterDebitos();
+        }
 
+        public void Cadastrar(string descricao, DateTime data, double valor)
+        {
+            Dictionary<string, string> pairValues = new Dictionary<string, string>();
+            pairValues.Add("descricao", descricao);
+            pairValues.Add("valor", valor.ToString());
+            pairValues.Add("data", data.ToString());
+            Validado valida = api.ValidarCadastroDebito(pairValues, "Debito/CadastrarConta");
+            if (valida.Icon == "success")
+            {
+                MessageBox.Show(valida.Message);
+            }
+            else
+            {
+                MessageBox.Show(valida.Message);
+            }
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(ttbDescricaoConta.Text) && dtpCobranca.Value.Date >= DateTime.Now.Date && (Convert.ToDouble(mtbValor.Text) > 0))
+            try
             {
-                WebApi api = new WebApi();
-                Dictionary<string, string> pairValues = new Dictionary<string, string>();
-                pairValues.Add("descricao", ttbDescricaoConta.Text);
-                pairValues.Add("valor", mtbValor.Text);
-                pairValues.Add("data", dtpCobranca.Value.Date.ToString());
-                Validado valida = api.ValidarCadastroDebito(pairValues, "Debito/CadastrarConta");
-                if (valida.Icon == "success")
+                double valor = Convert.ToDouble(mtbValor.Text);
+                if (!string.IsNullOrEmpty(ttbDescricaoConta.Text) && dtpCobranca.Value.Date >= DateTime.Now.Date && valor > 0)
                 {
-                    MessageBox.Show(valida.Message);
+                    Cadastrar(ttbDescricaoConta.Text, dtpCobranca.Value.Date, valor);
                 }
                 else
                 {
-                    MessageBox.Show(valida.Message);
+                    MessageBox.Show("Preencha todos os campos de Cadastro.");
                 }
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("Preencha todos os campos de Cadastro.");
+                MessageBox.Show("Erro!", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-        private void GerenciarDebitos_Load()
-        {
-
+            
         }
 
         private void GerenciarDebitos_Load(object sender, EventArgs e)
@@ -73,21 +84,15 @@ namespace Gerenciamento_de_débitos
             if (CbxPesquisa.SelectedIndex == 0)
             {
                 AtivarPaineis(PnlDescricao, PnlValor, PnlData);
-
             }
             else if (CbxPesquisa.SelectedIndex == 1)
             {
                 AtivarPaineis(PnlValor, PnlData, PnlDescricao);
-
-
             }
-            else if (CbxPesquisa.SelectedIndex == 2)
+            else
             {
                 AtivarPaineis(PnlData, PnlDescricao, PnlValor);
-
-
             }
-
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
@@ -95,16 +100,26 @@ namespace Gerenciamento_de_débitos
             
             WebApi api = new WebApi();
             Dictionary<string, string> pairValues = new Dictionary<string, string>();
-            pairValues.Add("fdescricao", "Ola descricao teste");
+            pairValues.Add("fdescricao", "");
             pairValues.Add("fvalor", "12");
             pairValues.Add("fdata", dtpCobranca.Value.Date.ToString());
-            IList<DebitoModel> valida = api.ObterDebitos(pairValues, "Debito/filtrarDebitos");
+            IList<DebitoModel> valida = api.ObterDebitos(pairValues, "Debito/obterDebitos");
        
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvDebitos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.ColumnIndex == 4) // clicou no botão Editar
+            {
+                AlterarDebitos formAlterar = new AlterarDebitos(this);
+                formAlterar.ttbDescricaoConta.Text = dgvDebitos.SelectedRows[e.RowIndex].Cells[0].Value.ToString();
+                formAlterar.dtpCobranca.Value = Convert.ToDateTime(dgvDebitos.SelectedRows[e.RowIndex].Cells[1].Value);
+                formAlterar.mtbValor.Text = dgvDebitos.SelectedRows[e.RowIndex].Cells[2].Value.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Não");
+            }
         }
     }
 }
