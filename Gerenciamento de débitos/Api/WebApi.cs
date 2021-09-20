@@ -64,9 +64,13 @@ namespace Gerenciamento_de_débitos.Api
         {
             var jsonString = JsonConvert.SerializeObject(debitoModel);
 
-            var httpContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
-
-            HttpResponseMessage response = HttpInstance.GetHttpClientInstance().DeleteAsync(BaseUrl + action).Result;
+            HttpRequestMessage request = new HttpRequestMessage
+            {
+                Content = new StringContent(jsonString, Encoding.UTF8, "application/json"),
+                Method = HttpMethod.Delete,
+                RequestUri = new Uri(BaseUrl+action)
+            };
+            HttpResponseMessage response = HttpInstance.GetHttpClientInstance().SendAsync(request).Result;
 
             JObject authJson = JObject.Parse(response.Content.ReadAsStringAsync().Result);
             JToken icon = authJson.GetValue("icon");

@@ -152,3 +152,4 @@ C:\Users\pedro\Desktop\Desafio - Desktop\Gerenciamento de débitos\obj\Debug\net
 C:\Users\pedro\Desktop\Desafio - Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.pdb
 C:\Users\pedro\Desktop\Desafio - Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento de débitos.genruntimeconfig.cache
 C:\Users\pedro\Desktop\Desafio - Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.View.AlterarDebitos.resources
+C:\Users\Leonardo\Source\Repos\leoskiline\Gerenciador-de-Debitos-Desktop\Gerenciamento de débitos\obj\Debug\net5.0-windows\Gerenciamento_de_débitos.View.AlterarDebitos.resources
