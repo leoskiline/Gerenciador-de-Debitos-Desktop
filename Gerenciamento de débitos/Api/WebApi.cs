@@ -60,6 +60,7 @@ namespace Gerenciamento_de_débitos.Api
             Validado auth = new(icon.ToString(), message.ToString());
             return auth;
         }
+
         public Validado ExcluirDebito(DebitoModel debitoModel, string action)
         {
             var jsonString = JsonConvert.SerializeObject(debitoModel);
@@ -84,7 +85,7 @@ namespace Gerenciamento_de_débitos.Api
         {
             HttpResponseMessage response = HttpInstance.GetHttpClientInstance().GetAsync(BaseUrl + action).Result;
             JArray authJson = JArray.Parse(response.Content.ReadAsStringAsync().Result);
-            DebitoModel model = null;
+            DebitoModel model;
             List<DebitoModel> listaDebitos = new List<DebitoModel>();
             foreach (JObject obj in authJson)
             {
@@ -102,7 +103,7 @@ namespace Gerenciamento_de_débitos.Api
         {
             HttpResponseMessage response = HttpInstance.GetHttpClientInstance().GetAsync(BaseUrl + action).Result;
             JArray authJson = JArray.Parse(response.Content.ReadAsStringAsync().Result);
-            DebitoModel model = null;
+            DebitoModel model;
             List<DebitoModel> listaDebitos = new List<DebitoModel>();
             foreach (JObject obj in authJson)
             {
