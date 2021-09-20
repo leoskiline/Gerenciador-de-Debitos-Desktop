@@ -40,5 +40,18 @@ namespace Gerenciamento_de_débitos.Api
             Validado auth = new Validado(icon.ToString(), message.ToString());
             return auth;
         }
+        public IList<DebitoModel> ObterDebitos(Dictionary<string, string> pairValues, string action) /// TERIA QUE SER UMA LISTA PARA RETORNAR
+        {
+            HttpResponseMessage response = HttpInstance.GetHttpClientInstance().PostAsync(BaseUrl + action, new FormUrlEncodedContent(pairValues)).Result;
+            JObject authJson = JObject.Parse(response.Content.ReadAsStringAsync().Result);
+
+            JToken descricao = authJson.GetValue("descricao");
+            JToken data = authJson.GetValue("data");
+            JToken valor = authJson.GetValue("valor");
+            DebitoModel debito = new DebitoModel(descricao.ToString(),Convert.ToDateTime(data),Convert.ToInt32(valor));
+
+            return default;
+        }
+
     }
 }

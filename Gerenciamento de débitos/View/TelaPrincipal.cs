@@ -63,5 +63,10 @@ namespace Gerenciamento_de_débitos
             lblTitle.Text = "Home";
             btnFecharForm.Visible = false;
         }
+
+        private void ListarDebitos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new GerenciarDebitos());
+        }
     }
 }
