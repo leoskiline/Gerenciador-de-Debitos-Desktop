@@ -34,7 +34,7 @@ namespace Gerenciamento_de_débitos
             this.btnSair = new System.Windows.Forms.Button();
             this.btnGerenciarDebitos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.btnFecharForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -79,15 +79,15 @@ namespace Gerenciamento_de_débitos
             this.btnGerenciarDebitos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGerenciarDebitos.FlatAppearance.BorderSize = 0;
             this.btnGerenciarDebitos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGerenciarDebitos.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnGerenciarDebitos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGerenciarDebitos.Font = new System.Drawing.Font("Comic Sans MS", 13.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnGerenciarDebitos.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnGerenciarDebitos.Image = ((System.Drawing.Image)(resources.GetObject("btnGerenciarDebitos.Image")));
             this.btnGerenciarDebitos.Location = new System.Drawing.Point(0, 60);
             this.btnGerenciarDebitos.Name = "btnGerenciarDebitos";
-            this.btnGerenciarDebitos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnGerenciarDebitos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGerenciarDebitos.Size = new System.Drawing.Size(230, 60);
             this.btnGerenciarDebitos.TabIndex = 1;
-            this.btnGerenciarDebitos.Text = "Gerenciar Debito";
+            this.btnGerenciarDebitos.Text = "Gerenciar Debitos";
             this.btnGerenciarDebitos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGerenciarDebitos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGerenciarDebitos.UseVisualStyleBackColor = true;
@@ -96,24 +96,25 @@ namespace Gerenciamento_de_débitos
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 60);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // label1
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(180, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 58);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Desafio ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelTitleBar
             // 
@@ -169,10 +170,14 @@ namespace Gerenciamento_de_débitos
             this.Controls.Add(this.panelDesktopPanel);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaPrincipal";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tela Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.ResumeLayout(false);
@@ -186,10 +191,10 @@ namespace Gerenciamento_de_débitos
         private System.Windows.Forms.Panel panelDesktopPanel;
         private System.Windows.Forms.Button btnGerenciarDebitos;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnFecharForm;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -20,17 +20,19 @@ namespace Gerenciamento_de_débitos.View
             _formGerenciarDebitos = gerenciar;
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void btnAlterar_Click(object sender, EventArgs e)
         {
             try
             {
-                _formGerenciarDebitos.Cadastrar(ttbDescricaoConta.Text,
+                _formGerenciarDebitos.Alterar(
+                                            Convert.ToInt32(_formGerenciarDebitos.dgvDebitos.CurrentRow.Cells[2].Value),
+                                            ttbDescricaoConta.Text,
                                             dtpCobranca.Value.Date,
                                             Convert.ToDouble(mtbValor.Text));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Erro", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.Close();
         }

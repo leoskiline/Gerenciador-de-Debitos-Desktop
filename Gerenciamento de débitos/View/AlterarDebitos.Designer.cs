@@ -128,7 +128,7 @@ namespace Gerenciamento_de_débitos.View
             this.btnCadastrar.TabIndex = 1;
             this.btnCadastrar.Text = "Alterar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.btnCadastrar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // panel2
             // 
