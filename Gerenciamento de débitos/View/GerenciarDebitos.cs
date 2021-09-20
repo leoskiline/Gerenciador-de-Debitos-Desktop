@@ -89,7 +89,7 @@ namespace Gerenciamento_de_débitos
         public void Alterar(int id, string descricao, DateTime data, double valor)
         {
             DebitoModel debitoModel = new DebitoModel(id, descricao, data, valor * 10);
-            Validado valida = api.ExcluirDebito(debitoModel, "Debito/AlterarDados");
+            Validado valida = api.AlterarDebito(debitoModel, "Debito/AlterarDados");
             if (valida.Icon == "success")
             {
                 MessageBox.Show(valida.Message);
